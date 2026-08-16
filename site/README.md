@@ -18,4 +18,4 @@ npm run build
 GITHUB_ACTIONS=true npm run build:pages
 ```
 
-後者はGitHub Pages用の `/edinet-test` ベースパスを付けて `out/` に静的ファイルを出力します。`main` ブランチへのpushを契機に `.github/workflows/pages.yml` が公開します。
+後者はGitHub Pages用の `/edinet-test` ベースパスを付けて `out/` に静的ファイルを出力します。初回だけGitHubの `Settings → Pages → Build and deployment → Source` で **GitHub Actions** を選択します。その後は `main` ブランチへのpushを契機に `.github/workflows/pages.yml` が公開します。

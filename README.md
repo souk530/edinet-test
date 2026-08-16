@@ -8,7 +8,9 @@ Azure・S3・ローカル・SharePointの横断取り込みPoCは
 [docs/external_storage_setup_guide.md](docs/external_storage_setup_guide.md) を参照してください。
 
 図解マニュアルサイトは `site/` にあり、`main` ブランチへのpush後にGitHub Pagesへ
-自動デプロイされます。
+自動デプロイされます。初回だけGitHubの `Settings → Pages → Build and deployment →
+Source` で **GitHub Actions** を選択してください。その後、失敗したworkflowを再実行するか、
+`main` へ再度pushすると公開されます。
 
 EDINET API v2から提出書類を取得し、ZIP内のXBRLを正規化してSQLiteへ保存する
 Python CLIです。追加ライブラリなしで動作します。
