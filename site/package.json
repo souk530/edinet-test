@@ -1,0 +1,26 @@
+{
+  "name": "edinet-lakehouse-manual",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:pages": "GITHUB_ACTIONS=true next build",
+    "start": "next start",
+    "lint": "eslint . --ignore-pattern out --ignore-pattern .next"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "typescript": "5.9.3"
+  }
+}

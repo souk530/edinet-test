@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+*.egg-info/
+.pytest_cache/
+.venv/
+.env
+data/
+site/node_modules/
+site/.next/
+site/out/
+site/.npm-cache/
+site/.wrangler/

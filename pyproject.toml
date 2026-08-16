@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edinet-collector"
+version = "0.1.0"
+description = "EDINET APIから提出書類とXBRL構造化データを収集するCLI"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "EDINET Collector contributors" }]
+dependencies = []
+
+[project.scripts]
+edinet-collector = "edinet_collector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
